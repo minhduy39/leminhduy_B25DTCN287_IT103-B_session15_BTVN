@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email">
+        <br><br>
+        <label for="password">Mật khẩu:</label>
+        <br>
+        <input type="password" id="password">
+        <br><br>
+        <button id="button">Đăng nhập</button>
+
+    </form>
+    <script>
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const button = document.getElementById("button");
+        button.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const emailValue = emailInput.value;
+            const passwordValue = passwordInput.value;
+            const user = {
+                email: emailValue,
+                password: passwordValue,
+            };
+            console.log("Đối tượng user đã tạo thành công:");
+        });
+    </script>
+</body>
+
+</html>
